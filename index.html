@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600&family=Poppins:ital,wght@0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
     <title>Food Time</title>
+   
 </head>
 <body>
     <!-- start nav bar-->
@@ -39,15 +40,16 @@
         <div class="slide-text">
             <h3>Order food online from your favourite local restaurants.</h3>
             <h5>Freshly made food delivered to your door.</h5>
-            <form action="" class="location">
-                <i  class="vec" ></i>
+            <form class="location">
+            <i  class="vec" ></i>
                 <img src="./photos/Vector6.png" alt="" class="icon">
-                <input type="location" placeholder="            enter your location" class="loc" name="loc"/>
-                <button class="btn-search">
+                <input type="search" placeholder="            enter your location" class="loc" name="loc" id="locat"/>
+                <button class="btn-search" id="search" >
                    <img src="./photos/Vector.png" alt="">
                     Search
                 </button>
-            </form>
+            </form>    
+            
         </div>
         <div class="dish"><img src="./photos/image 1.png" alt="" />
         </div>
@@ -96,8 +98,16 @@
             <div class="text-over">
                 <h3>Want to be a part of Foodtime?</h3>
                 <h5>List your restaurant or shop on foodtime.</h5>
-                <button class="btn-inner">Get Started<img src="./photos/Vector5.png" alt=""></button>
+                <button class="btn-inner" id="show">Get Started<img src="./photos/Vector5.png" alt=""></button>
             </div>
+        </div>
+    </div>
+    <!--start hidden div-->
+    <div id="my-div">
+        <h3>join us</h3>
+        <div class="join">
+            <button id="btn-log">Login</button>
+            <button id="btn-reg">Signup</button>
         </div>
     </div>
     <!--end photo-->
@@ -161,6 +171,9 @@
     <footer class="foot">
         <p>© 2023 Nayeemur R Sakib</p>
     </footer>
-    <!--end footer-->   
+    <!--end footer-->  
+    
+    <!--Js-->
+    <script src="java.js"></script>
 </body>
 </html>

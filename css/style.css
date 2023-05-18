@@ -66,6 +66,7 @@ li a{
 
 /*end navbar css*/
 /*media navbar*/
+/*tablet view*/
 @media screen and (max-width:600px){
     .container{
         display:flex;
@@ -86,7 +87,6 @@ li a{
     padding: 5px;
     font-size: 15px;
     margin-right: 30px;
-
     }
      .container .login{
     width: 50px;
@@ -95,7 +95,17 @@ li a{
     line-height: 198%;
     border-radius: 22px;
     }
-
+}
+/* mobile view*/
+@media screen and (max-width: 480px){
+    .links{
+    margin-right:0;
+    }
+    li a{
+        padding: 2px;
+        font-size: 12px;
+        margin-right: 25px;
+    }
 }
 /*end media nav bar*/
 /* start slide css*/
@@ -246,6 +256,35 @@ li a{
     left:70%;
 }
 }
+@media screen and (max-width: 480px){
+  
+    .slide{
+        justify-content: center;
+        height: 600px;
+    }
+    .slide .slide-text .location .loc{
+        font-size: 13px;
+    }
+    .icon{
+        top:11px;
+        left:7px;
+    }
+    .slide .slide-text .location .btn-search{
+        width: 140px;
+    }
+    .dish{
+       width:100%;
+    }
+    .dish img{
+        width:85%;;
+    }
+    .test , .test1{
+        top: 65px;
+    } 
+    .test1{
+        top:71px;
+    }
+}
 /*end slide media*/
 /* start fav css*/
 
@@ -341,6 +380,11 @@ li a{
     width:100%;
 }
 }
+@media screen and (max-width: 480px){
+    .fav{
+        height: 600px;
+       }
+}
 
 /*end fav media*/
 /*start order css*/
@@ -392,11 +436,18 @@ li a{
     background-color: rgba(57, 108, 3, .05);
     border-radius: 15px;
 }
+#my-div{
+    height:50px;
+    display: none;
+}
+.my-style{
+    display:block ;
+}
 /*end order css*/
 /*media order*/
 @media screen and (max-width:600px){
     .order-container{
-        width:90%;
+        width:100%;
         height: 260px;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         justify-content: center;
@@ -420,7 +471,23 @@ li a{
         width: 70px;
         height: 70px;
     }
- }
+}
+@media screen and (max-width: 480px){
+    .order-container{
+        width:100%;
+        height: 240px;
+    }
+    .order-item1,.order-item2,.order-item3{
+        height: 210px;
+    }
+    .order-container h4{
+        font-size: 13px;
+    }
+    .order-container div img{
+            width: 60px;
+            height: 60px;
+    }
+}
 /*end order media*/
 /*start photo css*/
 
@@ -468,6 +535,11 @@ li a{
     left: 37%;
     top: 2300px;
 }
+
+#my-div{
+    height: 100px;
+    color: #3F3F3F;
+}
 /*end photo*/
 /*media photo */
 @media screen and (max-width:600px){
@@ -498,7 +570,54 @@ li a{
         top: 2100px;
     }
  }
+ @media screen and (max-width: 480px){
+    .photo-container{
+        height: 320px;
+    }
+    .text-over{
+        left: 17%;
+        top: 1750px;
+    }
+}
 /*end photo media*/
+/*hidden div css*/
+#my-div{
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(195, 195, 195,.05);
+    
+}
+#my-div h3{
+    font-size: 35px;
+    font-family: 'Poppins';
+    font-size: 40px;
+    line-height: 160%;
+    color: #3F3F3F;
+    text-align: center;
+}
+#my-div .join{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#btn-log,#btn-reg{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 60px;
+    background: #396C03;
+    border-radius: 50px;
+    font-family: 'Poppins';
+    font-size: 22px;
+    color: #ffff;
+    margin:10px;
+}
+/*end hidden div css*/
 /*contact us css*/
 .form-container{
     background-color: rgb(195, 195, 195,.05);
@@ -680,6 +799,22 @@ li a{
         width:100%;
     }
  }
+ @media screen and (max-width: 480px){
+    .app{
+        justify-content: center;
+        height: 500px;
+    }
+    .app .app-text .app-g{
+        width: 40%;
+        height: 55px;
+        padding: 0px;
+        margin-left: 140px;
+    }
+    .app-img{
+        width:94%;
+        margin-left:25px;
+    }
+}
 /*end app media*/
 /*start footer css*/
 
@@ -804,5 +939,11 @@ margin-top:0;
         margin-right:110px;
         }
  }
+ @media screen and (max-width: 480px){
+    .footer-container .logo{
+        left:-25px;
+        top: 0px;
+    }
+}
  /*end footer media*/
 
