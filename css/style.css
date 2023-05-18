@@ -583,12 +583,7 @@ li a{
 /*hidden div css*/
 #my-div{
     height:200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: rgb(195, 195, 195,.05);
-    
 }
 #my-div h3{
     font-size: 35px;
@@ -617,6 +612,37 @@ li a{
     color: #ffff;
     margin:10px;
 }
+/*hidden div media*/
+@media screen and (max-width:600px){
+    #my-div{
+        height:100px;
+    }
+    #my-div h3{
+        font-size: 30px;
+        line-height: 50%;
+    }
+    #btn-log,#btn-reg{
+        width: 120px;
+        height: 50px;
+        font-size: 20px;
+        margin:20px;
+    }
+ }
+ @media screen and (max-width: 480px){
+    #my-div{
+        height:90px;
+    }
+    #my-div h3{
+        font-size: 25px;
+        line-height: 50%;
+    }
+    #btn-log,#btn-reg{
+        width: 100px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+/*end hidden div media*/
 /*end hidden div css*/
 /*contact us css*/
 .form-container{
