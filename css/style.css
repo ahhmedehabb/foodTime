@@ -245,6 +245,9 @@ li a{
     width:550px;
     height: fit-content;
 }
+ .dish img{
+        width:95%;;
+    }
 .test , .test1{
     width: 100px;
     height: 100px;
@@ -284,6 +287,12 @@ li a{
     .test1{
         top:71px;
     }
+}
+@media screen and (max-width: 480px){
+  
+   .test1{
+    left:68%;
+   }
 }
 /*end slide media*/
 /* start fav css*/
@@ -384,6 +393,16 @@ li a{
     .fav{
         height: 600px;
        }
+}
+ @media screen and (max-width: 400px){
+    .fav .text h3{
+        width: 80%;
+        font-size: 25px;
+    }
+    .fav .text p{
+        top:70%;
+        width:300px;
+    }
 }
 
 /*end fav media*/
@@ -495,6 +514,7 @@ li a{
     background-color: rgb(195, 195, 195,.05); 
     height: 900px;
     width:100%;
+    position:relative;
 }
 
 .inner{
@@ -532,8 +552,8 @@ li a{
 }
 .text-over{
     position:absolute;
-    left: 37%;
-    top: 2300px;
+    left: 36%;
+    top: 660px;
 }
 
 #my-div{
@@ -566,8 +586,8 @@ li a{
         width:100%;
     }
     .text-over{
-        left: 17%;
-        top: 2100px;
+        left: 20%;
+        top: 280px;
     }
  }
  @media screen and (max-width: 480px){
@@ -576,7 +596,13 @@ li a{
     }
     .text-over{
         left: 17%;
-        top: 1750px;
+        top: 200px;
+    }
+}
+ @media screen and (max-width: 400px){
+    .text-over{
+        left: 8%;
+        top: 160px;
     }
 }
 /*end photo media*/
@@ -639,6 +665,17 @@ li a{
     #btn-log,#btn-reg{
         width: 100px;
         height: 45px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 400px){
+    #my-div h3{
+        font-size: 20px;
+        line-height: 50%;
+    }
+    #btn-log,#btn-reg{
+        width: 80px;
+        height: 40px;
         font-size: 18px;
     }
 }
@@ -841,6 +878,23 @@ li a{
         margin-left:25px;
     }
 }
+@media screen and (max-width: 400px){
+  
+    .app .app-text h3{
+        font-size:25px;
+        padding:30px;
+        width: 350px;
+    }
+    .app .app-text p{
+        width: 300px;
+        top:0;
+        left:35px
+    }
+    .app-img{
+        width:94%;
+        margin-left:20px;
+    }
+}
 /*end app media*/
 /*start footer css*/
 
@@ -970,6 +1024,16 @@ margin-top:0;
         left:-25px;
         top: 0px;
     }
+}
+ @media screen and (max-width: 400px){
+   .footer-container .logo{
+        left:0px;
+        top: 0px;
+    }
+    .foot p{
+        font-weight: 200;
+        text-align:center;
+        }
 }
  /*end footer media*/
 
