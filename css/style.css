@@ -407,106 +407,224 @@ li a{
 
 /*end fav media*/
 /*start order css*/
+
+.product-container{
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-container h3{
+    text-align: center;
+    margin-top:50px;
+    margin-bottom:30px;
+    font-family: 'Merienda';
+    font-size: 50px;
+    color: #396C03;
+}
 .order-container{
     width:auto;
-    height: 400px;
-    display: grid;
-    background-color: rgb(195, 195, 195,.05);
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    gap:50px 100px;
-    position: relative;
+    gap:60px 60px;
 }
-
-.order-item1,.order-item2,.order-item3{
-     position:absolute; 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    border-radius: 15px;
     width:20%;
-    height: 400px;
-    top:20px;
-    padding:20px;
+    height: 500px;
+    text-align: center;
+} 
+.card img{
+    width:100%;
+    height: 300px;
 }
-.order-item1{
-    left:20%;
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
 }
-
-.order-item2{
-    left:40%;
+.text-container {
+    padding: 10px 0;
 }
-
-.order-item3{
-    left:60%;
+.text-container h4{
+    font-family: 'Merienda';
+    font-size: 30px;
+    color: #396C03;
+    margin-bottom: 5px;
 }
-
-.order-container h4{
-    font-family: 'Poppins';
-    font-size: 25px;
-    color: #3F3F3F;
-}
-
-.order-container p{
+.text-container p,h5{
     font-family: 'Poppins';
     font-size: 15px;
-    line-height: 160%;
     color: #676767;
+    margin-bottom: 7px;
 }
+.text-container h5{
+    font-size: 18px;
+}
+.text-container .order-now{
+    cursor:pointer;
+    font-size: 25px;
+    margin:0;
+    padding:0;
+    width:100%;
+    height: 50px;
+    border: none;
+    border-bottom-right-radius:15px ;
+    border-bottom-left-radius:15px ;
+    background-color:#396C03;  
+}
+.text-container .order-now a{
+    text-decoration: none;
+    color:#fff;
+}
+.text-container .order-now:hover{
+    background-color:#b1d28c ;
+}
+/*start order media*/
 
-.order-container :hover{
-    background-color: rgba(57, 108, 3, .05);
+.product-container{
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-container h3{
+    text-align: center;
+    margin-top:50px;
+    margin-bottom:30px;
+    font-family: 'Merienda';
+    font-size: 50px;
+    color: #396C03;
+}
+.order-container{
+    width:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap:60px 60px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
     border-radius: 15px;
+    width:20%;
+    height: 500px;
+    text-align: center;
+} 
+.card img{
+    width:100%;
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
-#my-div{
-    height:50px;
-    display: none;
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
 }
-.my-style{
-    display:block ;
+.text-container {
+    padding: 10px 0;
 }
-/*end order css*/
-/*media order*/
+.text-container h4{
+    font-family: 'Merienda';
+    font-size: 30px;
+    color: #396C03;
+    margin-bottom: 5px;
+}
+.text-container p,h5{
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #676767;
+    margin-bottom: 7px;
+}
+.text-container h5{
+    font-size: 18px;
+}
+.text-container .order-now{
+    cursor:pointer;
+    font-size: 25px;
+    margin:0;
+    padding:0;
+    width:100%;
+    height: 50px;
+    border: none;
+    border-bottom-right-radius:15px ;
+    border-bottom-left-radius:15px ;
+    background-color:#396C03;  
+}
+.text-container .order-now a{
+    text-decoration: none;
+    color:#fff;
+}
+.text-container .order-now:hover{
+    background-color:#b1d28c ;
+}
+/*start order media*/
 @media screen and (max-width:600px){
     .order-container{
-        width:100%;
-        height: 260px;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        justify-content: center;
-        align-content: center;
-        gap:50px 100px;
+        gap:40px 60px;
+        margin-bottom: 20px;
     }
-    .order-item1,.order-item2,.order-item3{
-       width:18%;
-       height: 230px;
-       top:20px;
-       padding:4px;
-   }
-   .order-container h4{
-    font-size: 15px;
+    .product-container h3{
+        text-align: center;
+        margin-top:20px;
+        font-size: 30px;
     }
-    .order-container p{
-        font-size: 7px;
-        line-height:90%;
+    .card {
+        height: 345px;
+    } 
+    .card img{
+        height: 150px;
     }
-    .order-container div img{
-        width: 70px;
-        height: 70px;
+    .text-container h4{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .text-container p,h5{
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+    .text-container h5{
+        font-size: 15px;
+    }
+    .text-container .order-now{
+        font-size: 20px;
+        height: 40px;  
+    }
+
+}
+ @media screen and (max-width: 480px){
+    .text-container .order-now{
+        font-size: 18px;
+        height: 40px;  
     }
 }
-@media screen and (max-width: 480px){
-    .order-container{
-        width:100%;
-        height: 240px;
+ @media screen and (max-width: 400px){
+    .product-container h3{
+        font-size: 25px;
     }
-    .order-item1,.order-item2,.order-item3{
-        height: 210px;
+    .card img{
+        height: 120px;
     }
-    .order-container h4{
+    .text-container p,h5{
+        font-size: 8px;
+        margin-bottom: 20px;
+    }
+    .text-container h5{
         font-size: 13px;
     }
-    .order-container div img{
-            width: 60px;
-            height: 60px;
+    .text-container .order-now{
+        font-size: 15px;
+        margin-top:43px; 
     }
 }
+   
+   
 /*end order media*/
 /*start photo css*/
 
@@ -552,14 +670,10 @@ li a{
 }
 .text-over{
     position:absolute;
-    left: 36%;
+    left: 38%;
     top: 660px;
 }
 
-#my-div{
-    height: 100px;
-    color: #3F3F3F;
-}
 /*end photo*/
 /*media photo */
 @media screen and (max-width:600px){
@@ -1037,3 +1151,70 @@ margin-top:0;
 }
  /*end footer media*/
 
+/*product */
+
+.p-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:space-around;
+    width:100%;
+    height: auto;
+    margin-top:50px;
+    margin-bottom: 50px;;
+}
+
+.p-container .p-img{
+    width:55%;
+}
+
+.p-container .p-img img{
+    height: 700px;
+    width:90%;
+}
+
+.info{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info h4{
+    font-family: 'Merienda';
+    font-size: 50px;
+    color: #396C03;
+    margin-bottom: 5px;
+}
+
+.info  p,h5{
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #676767;
+    margin-bottom: 7px;
+}
+.info .price{
+    text-align: center;
+    width:100%;
+    margin-top:200px;
+} 
+.info .order-now{
+    cursor:pointer;
+    font-size: 25px;
+    margin:0;
+    padding:0;
+    width:45%;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background-color:#396C03;
+}
+.info .order-now a{
+    text-decoration: none;
+    color:#fff;
+}
+.info .order-now:hover{
+    background-color:#b1d28c ;
+}

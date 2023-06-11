@@ -17,14 +17,3 @@ hide.addEventListener("click",()=>{
                 myDiv.style.display="block";
         }
 })
-
-const login=document.getElementById("btn-log");
-const signup=document.getElementById("btn-reg");
-
-login.addEventListener("click",()=>{
-        window.location.href="login.html";
-})
-
-signup.addEventListener("click",()=>{
-        window.location.href="register.html";
-})
